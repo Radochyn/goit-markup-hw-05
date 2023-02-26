@@ -1,6 +1,6 @@
 :root {
-    --brend-color: #2196f3;
-    --main-title-color: #212121;
+    --brend-color: #4D5AE5;
+    --main-title-color: #2E2F42;
     --second-title-color: #757575;
   }
 
@@ -153,10 +153,10 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background: #2f303a;
+    background: #2E2F42;
     background-image: linear-gradient(
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
+        rgba(47, 48, 58, 0.7),
+        rgba(47, 48, 58, 0.7)
       ),
       url(../images/8.jpg);
     background-repeat: no-repeat;
@@ -171,10 +171,10 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-  
+    font-family: roboto;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #ffffff;
   }
   
@@ -192,7 +192,7 @@
     cursor: pointer;
     border: none;
   
-    background: #2196f3;
+    background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     width: 200px;
@@ -224,7 +224,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: var(--main-title-color);
     padding-bottom: 10px;
   }
@@ -384,9 +384,16 @@
   }
   
   .footer {
-    background: #2f303a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2E2F42;
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1600px;
+    left: 0px;
+    margin: auto;
+
   }
   .footer-item {
     margin-bottom: 9px;
@@ -408,10 +415,19 @@
   }
   
   .footer-address {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: "roboto";
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff;
+  }
+
+  .footer-text {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "roboto";
+    line-height: 1.71;
+    letter-spacing: 0.03em;
   }
   
   .footer-mail {
@@ -646,8 +662,8 @@
 
   .modal {
     position: relative;
-    width: 528px;
-    height: 580px;
+    width: 408px;
+    height: 576px;
     background-color: #FFFFFF;
     border-radius: 4px;
     padding: 8px;
@@ -661,6 +677,8 @@
 
   .close-modal-button {
     margin-left: auto;
+    margin-right: 24px;
+    margin-top: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -669,5 +687,6 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    background-color: transparent;
+    background-color: #E7E9FC;
+    
   }
